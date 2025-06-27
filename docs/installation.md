@@ -46,12 +46,12 @@ sudo python3 -m pip install adsbcot
 
 ## Docker
 
-Build the docker container.
+Build the docker container. (The Dockerfile resides in the `docker/` directory.)
 
 ```sh linenums="1"
 git clone https://github.com/snstac/adsbcot.git
 cd adsbcot/
-docker build -t adsbcot .
+docker build -t adsbcot -f docker/Dockerfile .
 ```
 
 Run the docker container with config folder mounted locally. Config files can be edited in the local folder ```/opt/docker/adsbcot/```.
